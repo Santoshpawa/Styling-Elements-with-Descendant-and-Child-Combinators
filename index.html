@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with Combinators</title>
+    <style>
+        /* Requirement 2: Descendant combinator to style all <p> inside <div> in blue text */
+        div p {
+            color: blue;
+        }
+
+        /* Requirement 3: Child combinator to style only the <p> that is a direct child of <div> with bold font weight */
+        div > p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>This is a paragraph directly inside the div.</p>
+        <section>
+            <p>This paragraph is inside the section, which is inside the div.</p>
+        </section>
+    </div>
+
+</body>
+</html>
